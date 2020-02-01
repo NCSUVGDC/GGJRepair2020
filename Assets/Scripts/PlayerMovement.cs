@@ -6,9 +6,9 @@ public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 8f;
 
-    public Rigidbody2D rb;
+    public Rigidbody rb;
 
-    Vector2 movement;
+    Vector3 movement;
 
     public KeyCode moveUp = KeyCode.W;
     public KeyCode moveDown = KeyCode.S;
@@ -48,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         // Movement
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        rb.velocity = movement * moveSpeed;
 
         // Rotation
         //rb.MoveRotation(movement);
