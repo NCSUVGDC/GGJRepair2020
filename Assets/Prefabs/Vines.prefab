@@ -3075,6 +3075,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1479136158175483}
+  - component: {fileID: 2856270334220598038}
   m_Layer: 0
   m_Name: Vines
   m_TagString: Untagged
@@ -3122,6 +3123,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2856270334220598038
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1479136158175236}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.9573174, y: 1.8198471, z: 1.0307178}
+  m_Center: {x: -0.9786587, y: 0.40992355, z: -0.015358925}
 --- !u!1 &1479136182096981
 GameObject:
   m_ObjectHideFlags: 0
