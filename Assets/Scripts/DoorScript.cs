@@ -25,7 +25,7 @@ public class DoorScript : MonoBehaviour
     {
         if (button.pressed)
         {
-            Debug.Log("button pressed");
+            //Debug.Log("button pressed");
             transform.position = Vector3.MoveTowards(transform.position, endpos, speed * Time.deltaTime);
         } else
         {
