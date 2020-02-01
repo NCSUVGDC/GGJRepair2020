@@ -5,6 +5,8 @@ using UnityEngine;
 public class DoorScript : MonoBehaviour
 {
 
+    public ButtonScript button;
+
     public float distance = 10f;
     public float speed = 10f;
 
@@ -21,18 +23,13 @@ public class DoorScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("space"))
+        if (button.pressed)
         {
-            while (transform.position != endpos)
-            {
-                transform.position = Vector3.MoveTowards(transform.position, endpos, speed * Time.deltaTime);
-            }
+            Debug.Log("button pressed");
+            transform.position = Vector3.MoveTowards(transform.position, endpos, speed * Time.deltaTime);
         } else
         {
-            while (transform.position != startpos)
-            {
-                transform.position = Vector3.MoveTowards(transform.position, startpos, speed * Time.deltaTime);
-            }
+            transform.position = Vector3.MoveTowards(transform.position, startpos, speed * Time.deltaTime);
         }
     }
 }
