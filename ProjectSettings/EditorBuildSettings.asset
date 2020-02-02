@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MikaelaTest2L5.unity
     guid: a97181688c1a0c84b95cdde9b0663f53
+  - enabled: 1
+    path: Assets/Scenes/EndingSequence.unity
+    guid: 2e5e480f5c974bf46848d355ca045174
   m_configObjects: {}

@@ -46,6 +46,11 @@ public class LevelLoader : MonoBehaviour
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
     }
 
+    public void LoadNextLevel(int idx)
+    {
+        StartCoroutine(LoadLevel(idx));
+    }
+
     IEnumerator LoadLevel(int index)
     {
         //Play animation
