@@ -23,8 +23,8 @@ public class WinCondition : MonoBehaviour
 
     int currentIndex = 0;
 
-    public CanvasGroup fade1;
-    public CanvasGroup fade2;
+    public Transform player1;
+    public Transform player2;
 
     void OnTriggerEnter(Collider other)
     {
@@ -36,6 +36,12 @@ public class WinCondition : MonoBehaviour
         if (playerCount == 2 && win == false)
         {
             Debug.Log("You win!");
+
+            player1.gameObject.GetComponent<PlayerMovement>().moveSpeed = 0;
+            player2.gameObject.GetComponent<PlayerMovement>().moveSpeed = 0;
+
+            player1.position = new Vector3(transform.position.x - 1, transform.position.y, player1.position.z);
+            player2.position = new Vector3(transform.position.x + 1, transform.position.y, player2.position.z);
             win = true;
         }
 
