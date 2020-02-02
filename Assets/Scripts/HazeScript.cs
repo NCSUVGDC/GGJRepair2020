@@ -6,28 +6,36 @@ public class HazeScript : MonoBehaviour
 {
     public BoxCollider bc;
     int count = 0;
+    public MeshRenderer mr;
+    public Material activeMat;
+    public Material inactiveMat;
 
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Spotlight"))
         {
-            Debug.Log("spotlight collided");
+            //Debug.Log("spotlight collided");
             count++;
-        }
 
-        bc.isTrigger = true;
+            if (!bc.isTrigger)
+            {
+                bc.isTrigger = true;
+                mr.material = inactiveMat;
+            }
+        }
     }
     void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Spotlight"))
         {
-            Debug.Log("spotlight removed");
+            //Debug.Log("spotlight removed");
             count--;
         }
 
         if (count == 0)
         {
             bc.isTrigger = false;
+            mr.material = activeMat;
         }
     }
 }
