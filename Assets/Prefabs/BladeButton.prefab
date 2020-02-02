@@ -29,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5818551188646695717}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -1.21, y: 0.404, z: 38.94}
-  m_LocalScale: {x: 2, y: 2, z: 0.03332228}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 2943396781754638194}
   m_Father: {fileID: 0}
@@ -190,43 +190,43 @@ MonoBehaviour:
   - m_Vertices: 080000000a00000010000000
   m_SharedTextures: []
   m_Positions:
-  - {x: 0, y: 0, z: 0}
-  - {x: 1, y: 0, z: 0}
-  - {x: 0.5, y: 1, z: 0}
-  - {x: 1, y: 0, z: 0}
-  - {x: 1, y: 0, z: 1}
-  - {x: 0.5, y: 1, z: 0}
-  - {x: 0.5, y: 1, z: 1}
-  - {x: 1, y: 0, z: 1}
-  - {x: 0, y: 0, z: 1}
-  - {x: 0.5, y: 1, z: 1}
-  - {x: 0, y: 0, z: 1}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0.5, y: 1, z: 1}
-  - {x: 0.5, y: 1, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 1, y: 0, z: 0}
-  - {x: 0, y: 0, z: 1}
-  - {x: 1, y: 0, z: 1}
+  - {x: 0, y: 0, z: -0.05}
+  - {x: 1, y: 0, z: -0.05}
+  - {x: 0.5, y: 1, z: -0.05}
+  - {x: 1, y: 0, z: -0.05}
+  - {x: 1, y: 0, z: 0.05}
+  - {x: 0.5, y: 1, z: -0.05}
+  - {x: 0.5, y: 1, z: 0.05}
+  - {x: 1, y: 0, z: 0.05}
+  - {x: 0, y: 0, z: 0.05}
+  - {x: 0.5, y: 1, z: 0.05}
+  - {x: 0, y: 0, z: 0.05}
+  - {x: 0, y: 0, z: -0.05}
+  - {x: 0.5, y: 1, z: 0.05}
+  - {x: 0.5, y: 1, z: -0.05}
+  - {x: 0, y: 0, z: -0.05}
+  - {x: 1, y: 0, z: -0.05}
+  - {x: 0, y: 0, z: 0.05}
+  - {x: 1, y: 0, z: 0.05}
   m_Textures0:
   - {x: 0, y: 0}
   - {x: 1, y: 0}
   - {x: 0.5, y: 1}
-  - {x: 0, y: -0.4472136}
-  - {x: 1, y: -0.4472136}
-  - {x: 0, y: 0.67082036}
-  - {x: 1, y: 0.67082036}
+  - {x: -0.05, y: -0.4472136}
+  - {x: 0.05, y: -0.4472136}
+  - {x: -0.05, y: 0.67082036}
+  - {x: 0.05, y: 0.67082036}
   - {x: -1, y: 0}
   - {x: 0, y: 0}
   - {x: -0.5, y: 1}
-  - {x: -1, y: 0}
-  - {x: 0, y: 0}
-  - {x: -1, y: 1.118034}
-  - {x: 0, y: 1.118034}
-  - {x: 0, y: 0}
-  - {x: -1, y: 0}
-  - {x: 0, y: 1}
-  - {x: -1, y: 1}
+  - {x: -0.05, y: 0}
+  - {x: 0.05, y: 0}
+  - {x: -0.05, y: 1.118034}
+  - {x: 0.05, y: 1.118034}
+  - {x: 0, y: -0.05}
+  - {x: -1, y: -0.05}
+  - {x: 0, y: 0.05}
+  - {x: -1, y: 0.05}
   m_Textures2: []
   m_Textures3: []
   m_Tangents:
@@ -284,8 +284,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 20}
-  m_Center: {x: 0.5, y: 0.5, z: -2}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0.5, y: 0.5, z: 0}
 --- !u!1001 &876574380314298420
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -356,17 +356,27 @@ PrefabInstance:
     - target: {fileID: 2662537801514669894, guid: 78c18251556bb8344ad9c1306f28f3fd,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.48066312
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2662537801514669894, guid: 78c18251556bb8344ad9c1306f28f3fd,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.48351
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2662537801514669894, guid: 78c18251556bb8344ad9c1306f28f3fd,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 10
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2662537801514669895, guid: 78c18251556bb8344ad9c1306f28f3fd,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2662537801514669895, guid: 78c18251556bb8344ad9c1306f28f3fd,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78c18251556bb8344ad9c1306f28f3fd, type: 3}
