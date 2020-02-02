@@ -7,6 +7,7 @@ public class WinCondition : MonoBehaviour
 {
     int playerCount = 0;
     public bool win = false;
+    public bool conversationDone = false;
 
     public string[] messages;
     public string[] colors;
@@ -20,9 +21,10 @@ public class WinCondition : MonoBehaviour
     Color red = new Color(1, 0, 0);
     Color blue = new Color(0, 0, 1);
 
-    public float timeToWait;
+    int currentIndex = 0;
 
-    float elapsedTime;
+    public CanvasGroup fade1;
+    public CanvasGroup fade2;
 
     void OnTriggerEnter(Collider other)
     {
@@ -35,39 +37,9 @@ public class WinCondition : MonoBehaviour
         {
             Debug.Log("You win!");
             win = true;
-
-            for(int i = 0; i < messages.Length; i++)
-            {
-                Debug.Log(messages[i] + colors[i]);
-                color = colors[i];
-                if (color == "red")
-                {
-                    redText.color = red;
-                    redText.text = messages[i];
-                }
-                else if (color == "blue")
-                {
-                    blueText.color = blue;
-                    blueText.text = messages[i];
-                }
-                else if (color == "purple")
-                {
-                    redText.color = purple;
-                    blueText.color = purple;
-                    redText.text = messages[i];
-                    blueText.text = messages[i];
-                }
-
-                elapsedTime = 0;
-                while (elapsedTime < timeToWait)
-                {
-                    elapsedTime += Time.deltaTime;
-                }
-
-                redText.text = "";
-                blueText.text = "";
-            }
         }
+
+        
     }
 
     private void OnTriggerExit(Collider other)
@@ -77,4 +49,45 @@ public class WinCondition : MonoBehaviour
             playerCount--;
         }
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && win)
+        {
+            redText.text = "";
+            blueText.text = "";
+            if (currentIndex < messages.Length)
+            {
+                Debug.Log(messages[currentIndex] + colors[currentIndex]);
+                color = colors[currentIndex];
+                if (color == "red")
+                {
+                    redText.color = red;
+                    redText.text = messages[currentIndex];
+                }
+                else if (color == "blue")
+                {
+                    blueText.color = blue;
+                    blueText.text = messages[currentIndex];
+                }
+                else if (color == "purple")
+                {
+                    redText.color = purple;
+                    blueText.color = purple;
+                    redText.text = messages[currentIndex];
+                    blueText.text = messages[currentIndex];
+                }
+
+                currentIndex++;
+            } else
+            {
+                conversationDone = true;
+            }
+            
+            
+        }
+    }
+
+
+
 }
