@@ -42,7 +42,6 @@ public class DoorScript : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, startpos, speed * Time.deltaTime);
             if (opened)
             {
-                FindObjectOfType<AudioManager>().Play("Doors");
                 opened = false;
             }
         }
