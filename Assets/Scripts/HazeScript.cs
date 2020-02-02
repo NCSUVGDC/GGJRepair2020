@@ -7,6 +7,7 @@ public class HazeScript : MonoBehaviour
     public BoxCollider bc;
     int count = 0;
     public MeshRenderer mr;
+    public ParticleSystem ps;
     public Material activeMat;
     public Material inactiveMat;
 
@@ -20,6 +21,7 @@ public class HazeScript : MonoBehaviour
             if (!bc.isTrigger)
             {
                 bc.isTrigger = true;
+                ps.Stop();
                 mr.material = inactiveMat;
             }
         }
@@ -36,6 +38,7 @@ public class HazeScript : MonoBehaviour
         {
             bc.isTrigger = false;
             mr.material = activeMat;
+            ps.Play();
         }
     }
 }
