@@ -18,6 +18,14 @@ public class CommentScript : MonoBehaviour
     Color red = new Color(1, 0, 0);
     Color blue = new Color(0, 0, 1);
 
+    bool redRunning = false;
+    bool blueRunning = false;
+    bool purpleRunning = false;
+
+    Coroutine redco;
+    Coroutine blueco;
+    Coroutine purpleco;
+
     public bool played = false;
 
     private void OnTriggerEnter(Collider other)
@@ -30,28 +38,70 @@ public class CommentScript : MonoBehaviour
                 blueText.color = purple;
                 redText.text = textToType;
                 blueText.text = textToType;
-                
-                
+                if (purpleRunning)
+                {
+                    StopCoroutine(purpleco);
+                    purpleRunning = false;
+                }
+                purpleco = StartCoroutine(WaitThenClear(2));
+
             } else if (isRed)
             {
                 redText.color = red;
                 redText.text = textToType;
+
+                if (redRunning)
+                {
+                    Debug.Log("stopping coroutine");
+                    StopCoroutine(redco);
+                    redRunning = false;
+                }
+                redco = StartCoroutine(WaitThenClear(0));
             } else if (isBlue)
             {
                 blueText.color = blue;
                 blueText.text = textToType;
+                if (blueRunning)
+                {
+                    StopCoroutine(blueco);
+                    blueRunning = false;
+                }
+                blueco = StartCoroutine(WaitThenClear(1));
             }
 
             played = true;
 
-            StartCoroutine("WaitThenClear");
+            
         }
     }
 
-    IEnumerator WaitThenClear()
+    IEnumerator WaitThenClear(int color)
     {
-        yield return new WaitForSecondsRealtime(5);
-        redText.text = "";
-        blueText.text = "";
+        
+        
+        if (color == 2)
+        {
+            purpleRunning = true;
+            yield return new WaitForSeconds(5);
+            redText.text = "";
+            blueText.text = "";
+            purpleRunning = false;
+        } else if (color == 1)
+        {
+            blueRunning = true;
+            yield return new WaitForSeconds(5);
+            blueText.text = "";
+            blueRunning = false;
+        } else if (color == 0)
+        {
+            redRunning = true;
+            Debug.Log("red is running");
+            yield return new WaitForSeconds(5);
+            redText.text = "";
+            Debug.Log("red no longer running");
+            redRunning = false;
+        }
+        
+        
     }
 }
