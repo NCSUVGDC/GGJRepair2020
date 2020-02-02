@@ -477,7 +477,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: DoorSliding
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: db3d455f853b21a43b5c7803d15a5517, type: 3}
     volume: 1
     pitch: 1
     source: {fileID: 0}
@@ -498,6 +498,12 @@ MonoBehaviour:
     clip: {fileID: 0}
     volume: 1
     pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Buttons
+    clip: {fileID: 8300000, guid: 80ddb2ab896bd4a47900ab5930d03865, type: 3}
+    volume: 1
+    pitch: 0.5
     source: {fileID: 0}
     loop: 0
 --- !u!4 &483143411

@@ -25,7 +25,12 @@ public class ButtonScript : MonoBehaviour
         if (other.tag == "Player")
         {
             bodies++;
+            if (bodies == 1)
+            {
+                FindObjectOfType<AudioManager>().Play("Buttons");
+            }
         }
+        
         
     }
 

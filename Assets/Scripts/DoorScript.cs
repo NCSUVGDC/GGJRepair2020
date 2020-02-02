@@ -12,6 +12,9 @@ public class DoorScript : MonoBehaviour
 
     private Vector3 endpos;
     private Vector3 startpos;
+
+    bool opened = false;
+
     // Start is called before the first frame update
 
     void Start()
@@ -27,9 +30,21 @@ public class DoorScript : MonoBehaviour
         {
             //Debug.Log("button pressed");
             transform.position = Vector3.MoveTowards(transform.position, endpos, speed * Time.deltaTime);
+
+            if (!opened)
+            {
+                FindObjectOfType<AudioManager>().Play("Doors");
+                opened = true;
+            }
+
         } else
         {
             transform.position = Vector3.MoveTowards(transform.position, startpos, speed * Time.deltaTime);
+            if (opened)
+            {
+                FindObjectOfType<AudioManager>().Play("Doors");
+                opened = false;
+            }
         }
     }
 }

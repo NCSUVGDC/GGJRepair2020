@@ -29,7 +29,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void play(string name)
+    public void Play(string name)
     {
         for (int i = 0; i < sounds.Length; i++)
         {
@@ -40,6 +40,19 @@ public class AudioManager : MonoBehaviour
             }
         }
 
+        Debug.LogWarning("No sound of name: " + name + " found");
+    }
+
+    public void Stop(string name)
+    {
+        for (int i = 0; i < sounds.Length; i++)
+        {
+            if (string.Equals(sounds[i].name, name))
+            {
+                sounds[i].source.Stop();
+                return;
+            }
+        }
         Debug.LogWarning("No sound of name: " + name + " found");
     }
 }
