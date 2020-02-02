@@ -45,10 +45,7 @@ public class BladeScript : MonoBehaviour
         Debug.Log(other.tag);
         if (other.tag == "Vines")
         {
-            Destroy(other.gameObject, killTime);
             Destroy(this.gameObject, killTime);
-            FindObjectOfType<AudioManager>().Play("Blades");
-            
         }
     }
 }
