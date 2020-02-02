@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7342737499381008998}
   - component: {fileID: 7342737499381008986}
   m_Layer: 0
-  m_Name: WinMat 1
+  m_Name: WinMat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -119,3 +119,4 @@ MonoBehaviour:
   blueText: {fileID: 0}
   player1: {fileID: 0}
   player2: {fileID: 0}
+  joined: {fileID: 6383611742446012698, guid: b06bf81b87b39df48955c966f5ce8232, type: 3}
