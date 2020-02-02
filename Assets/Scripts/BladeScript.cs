@@ -14,6 +14,8 @@ public class BladeScript : MonoBehaviour
 
     private Vector3 endpos;
 
+    bool cut = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,11 @@ public class BladeScript : MonoBehaviour
     void Update()
     {
         if (button.pressed)
+        {
+            cut = true;
+        }
+
+        if (cut)
         {
             if (Vector3.Magnitude(transform.position - endpos) > 0.1)
             {
