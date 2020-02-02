@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -610,7 +610,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh89024
+  m_Name: pb_Mesh30854
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1511,6 +1511,31 @@ PrefabInstance:
       propertyPath: m_SelectedVertices.Array.size
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5166513040337721184, guid: 7a039468e29a4ce429dcd0bbb8f58ef3,
+        type: 3}
+      propertyPath: redText
+      value: 
+      objectReference: {fileID: 380613190}
+    - target: {fileID: 5166513040337721184, guid: 7a039468e29a4ce429dcd0bbb8f58ef3,
+        type: 3}
+      propertyPath: blueText
+      value: 
+      objectReference: {fileID: 380613187}
+    - target: {fileID: 5166513040337721184, guid: 7a039468e29a4ce429dcd0bbb8f58ef3,
+        type: 3}
+      propertyPath: textToType
+      value: I lied to you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5166513040337721184, guid: 7a039468e29a4ce429dcd0bbb8f58ef3,
+        type: 3}
+      propertyPath: isRed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5166513040337721184, guid: 7a039468e29a4ce429dcd0bbb8f58ef3,
+        type: 3}
+      propertyPath: isBlue
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a039468e29a4ce429dcd0bbb8f58ef3, type: 3}
 --- !u!114 &289694071 stripped
@@ -1866,6 +1891,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
         type: 3}
+      propertyPath: messages.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
+      propertyPath: colors.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
       propertyPath: redText
       value: 
       objectReference: {fileID: 380613190}
@@ -1884,6 +1919,36 @@ PrefabInstance:
       propertyPath: player2
       value: 
       objectReference: {fileID: 2003788108}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
+      propertyPath: messages.Array.data[3]
+      value: '...To reach dawn.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
+      propertyPath: messages.Array.data[0]
+      value: The truth hurts.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
+      propertyPath: messages.Array.data[1]
+      value: But it also heals.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
+      propertyPath: messages.Array.data[2]
+      value: You have to travel through the night...
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
+      propertyPath: colors.Array.data[3]
+      value: purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
+      propertyPath: colors.Array.data[2]
+      value: red
+      objectReference: {fileID: 0}
     - target: {fileID: 7342737499381008997, guid: 45520ddf61c1ab74ebf2c511c77e1003,
         type: 3}
       propertyPath: m_Name
@@ -2308,6 +2373,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SelectedVertices.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5166513040337721184, guid: 7a039468e29a4ce429dcd0bbb8f58ef3,
+        type: 3}
+      propertyPath: redText
+      value: 
+      objectReference: {fileID: 380613190}
+    - target: {fileID: 5166513040337721184, guid: 7a039468e29a4ce429dcd0bbb8f58ef3,
+        type: 3}
+      propertyPath: blueText
+      value: 
+      objectReference: {fileID: 380613187}
+    - target: {fileID: 5166513040337721184, guid: 7a039468e29a4ce429dcd0bbb8f58ef3,
+        type: 3}
+      propertyPath: textToType
+      value: I used you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5166513040337721184, guid: 7a039468e29a4ce429dcd0bbb8f58ef3,
+        type: 3}
+      propertyPath: isRed
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a039468e29a4ce429dcd0bbb8f58ef3, type: 3}
@@ -3294,7 +3379,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-15612
+  m_Name: pb_Mesh-61276
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -29236,7 +29321,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-15274
+  m_Name: pb_Mesh-60916
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

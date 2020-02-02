@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -45325,12 +45325,12 @@ PrefabInstance:
     - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
         type: 3}
       propertyPath: messages.Array.size
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
         type: 3}
       propertyPath: colors.Array.size
-      value: 0
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
         type: 3}
@@ -45352,6 +45352,106 @@ PrefabInstance:
       propertyPath: player1
       value: 
       objectReference: {fileID: 700120849}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
+      propertyPath: messages.Array.data[0]
+      value: A relationship is a tree.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
+      propertyPath: messages.Array.data[1]
+      value: You can plant the seed.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
+      propertyPath: messages.Array.data[2]
+      value: But it needs water.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
+      propertyPath: messages.Array.data[3]
+      value: It needs sunlight.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
+      propertyPath: messages.Array.data[4]
+      value: It needs maintenance.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
+      propertyPath: messages.Array.data[5]
+      value: Open up.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
+      propertyPath: messages.Array.data[6]
+      value: Cut out external forces.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
+      propertyPath: messages.Array.data[7]
+      value: Reveal the truth.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
+      propertyPath: messages.Array.data[8]
+      value: And Grow.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
+      propertyPath: messages.Array.data[9]
+      value: Together.
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
+      propertyPath: colors.Array.data[0]
+      value: red
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
+      propertyPath: colors.Array.data[1]
+      value: blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
+      propertyPath: colors.Array.data[2]
+      value: red
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
+      propertyPath: colors.Array.data[3]
+      value: blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
+      propertyPath: colors.Array.data[4]
+      value: purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
+      propertyPath: colors.Array.data[5]
+      value: purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
+      propertyPath: colors.Array.data[6]
+      value: purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
+      propertyPath: colors.Array.data[7]
+      value: purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
+      propertyPath: colors.Array.data[8]
+      value: purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342737499381008986, guid: 45520ddf61c1ab74ebf2c511c77e1003,
+        type: 3}
+      propertyPath: colors.Array.data[9]
+      value: purple
+      objectReference: {fileID: 0}
     - target: {fileID: 7342737499381008997, guid: 45520ddf61c1ab74ebf2c511c77e1003,
         type: 3}
       propertyPath: m_Name
