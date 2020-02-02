@@ -34,6 +34,7 @@ public class CommentScript : MonoBehaviour
         {
             if (isRed && isBlue)
             {
+                
                 redText.color = purple;
                 blueText.color = purple;
                 redText.text = textToType;
@@ -43,6 +44,8 @@ public class CommentScript : MonoBehaviour
                     StopCoroutine(purpleco);
                     purpleRunning = false;
                 }
+                FindObjectOfType<AudioManager>().Play("Notif1");
+                FindObjectOfType<AudioManager>().Play("Notif2");
                 purpleco = StartCoroutine(WaitThenClear(2));
 
             } else if (isRed)
@@ -56,6 +59,7 @@ public class CommentScript : MonoBehaviour
                     StopCoroutine(redco);
                     redRunning = false;
                 }
+                FindObjectOfType<AudioManager>().Play("Notif1");
                 redco = StartCoroutine(WaitThenClear(0));
             } else if (isBlue)
             {
@@ -66,6 +70,7 @@ public class CommentScript : MonoBehaviour
                     StopCoroutine(blueco);
                     blueRunning = false;
                 }
+                FindObjectOfType<AudioManager>().Play("Notif2");
                 blueco = StartCoroutine(WaitThenClear(1));
             }
 

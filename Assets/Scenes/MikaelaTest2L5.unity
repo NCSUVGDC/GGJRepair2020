@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4400,27 +4400,27 @@ PrefabInstance:
       objectReference: {fileID: 189589748}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f2220ad6f127ea439c610ff951af25a, type: 3}
---- !u!1 &655331402 stripped
+--- !u!1 &628558238 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 5346311331492998945, guid: c4bbbd9746c112c44b3f46bf436e23a3,
+  m_CorrespondingSourceObject: {fileID: 4051088267582234540, guid: 3f2220ad6f127ea439c610ff951af25a,
     type: 3}
-  m_PrefabInstance: {fileID: 700120848}
+  m_PrefabInstance: {fileID: 628558237}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &655331403
+--- !u!82 &628558239
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 655331402}
+  m_GameObject: {fileID: 628558238}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7811d31eedff51344b21ace709834ef8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d29ae1f2776afe444922362edf12fcda, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -4430,9 +4430,9 @@ AudioSource:
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
-  BypassEffects: 1
-  BypassListenerEffects: 1
-  BypassReverbZones: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
   rolloffCustomCurve:
     serializedVersion: 2
     m_Curve:

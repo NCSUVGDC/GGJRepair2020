@@ -79,17 +79,21 @@ public class WinCondition : MonoBehaviour
                 if (color == "red")
                 {
                     redText.color = red;
+                    FindObjectOfType<AudioManager>().Play("Notif2");
                     redText.text = messages[currentIndex];
                 }
                 else if (color == "blue")
                 {
                     blueText.color = blue;
+                    FindObjectOfType<AudioManager>().Play("Notif1");
                     blueText.text = messages[currentIndex];
                 }
                 else if (color == "purple")
                 {
                     redText.color = purple;
                     blueText.color = purple;
+                    FindObjectOfType<AudioManager>().Play("Notif1");
+                    FindObjectOfType<AudioManager>().Play("Notif2");
                     redText.text = messages[currentIndex];
                     blueText.text = messages[currentIndex];
                 }

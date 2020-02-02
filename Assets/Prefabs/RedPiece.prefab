@@ -127,10 +127,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 8
   rb: {fileID: 2171755588372404848}
-  moveUp: 106
-  moveDown: 107
-  moveLeft: 104
-  moveRight: 108
+  moveUp: 273
+  moveDown: 274
+  moveLeft: 276
+  moveRight: 275
 --- !u!114 &2171755588372404851
 MonoBehaviour:
   m_ObjectHideFlags: 0
