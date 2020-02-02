@@ -40,6 +40,8 @@ public class PauseMenu : MonoBehaviour
     public void ToMenu()
     {
         Debug.Log("Menu Button pressed!");
+        Time.timeScale = 1f;
+        isPaused = false;
         SceneManager.LoadScene(0);
     }
 
