@@ -59,7 +59,7 @@ public class CommentScript : MonoBehaviour
                     StopCoroutine(redco);
                     redRunning = false;
                 }
-                FindObjectOfType<AudioManager>().Play("Notif1");
+                FindObjectOfType<AudioManager>().Play("Notif2");
                 redco = StartCoroutine(WaitThenClear(0));
             } else if (isBlue)
             {
@@ -70,7 +70,7 @@ public class CommentScript : MonoBehaviour
                     StopCoroutine(blueco);
                     blueRunning = false;
                 }
-                FindObjectOfType<AudioManager>().Play("Notif2");
+                FindObjectOfType<AudioManager>().Play("Notif1");
                 blueco = StartCoroutine(WaitThenClear(1));
             }
 
