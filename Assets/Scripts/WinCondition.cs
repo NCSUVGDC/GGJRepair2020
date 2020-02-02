@@ -26,6 +26,15 @@ public class WinCondition : MonoBehaviour
     public Transform player1;
     public Transform player2;
 
+    Vector3 finalpos;
+
+    public GameObject joined;
+
+    private void Start()
+    {
+        finalpos = new Vector3(transform.position.x, transform.position.y, player1.position.z);
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -40,8 +49,9 @@ public class WinCondition : MonoBehaviour
             player1.gameObject.GetComponent<PlayerMovement>().moveSpeed = 0;
             player2.gameObject.GetComponent<PlayerMovement>().moveSpeed = 0;
 
-            player1.position = new Vector3(transform.position.x - 1, transform.position.y, player1.position.z);
-            player2.position = new Vector3(transform.position.x + 1, transform.position.y, player2.position.z);
+            Destroy(player1.gameObject);
+            Destroy(player2.gameObject);
+            Instantiate(joined, finalpos, Quaternion.identity);
             win = true;
         }
 
